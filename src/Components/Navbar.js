@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 import logo from '../logo.svg';
-import {
-  Link
-} from "react-router-dom";
+
 export const Navbar = (props) => {
   
   return (
     <nav className={`navbar  text-${props.isDark=== true ?"light":"dark"} bg-${props.isDark=== true ?"dark":"warning"}`}>
       <div className="container">
-        <Link className={`navbar-brand mt-1 h4 text-${props.isDark=== true ?"light":"dark"}`} to="/">{props.title} </Link>
+        <a className={`navbar-brand mt-1 h4 text-${props.isDark=== true ?"light":"dark"}`} href="/">{props.title} </a>
         {/* <Link className={`navbar-brand mt-1 h4 text-${props.isDark=== true ?"light":"dark"}`} to="/about">about </Link> */}
         
         <div className="form-check form-switch">

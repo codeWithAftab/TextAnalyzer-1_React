@@ -38,18 +38,19 @@ function App() {
   }
   return (
     <>
-      <Router>
+      {/* <Router> */}
       <Navbar title="TextAnalyzer" isDark={isDark} darkWorld={darkWorld} toggle={toggleMode} />
       <Alerts Alert={alert} />
-          <Routes>
+          {/* <Routes>
             <Route exact path="/about" element={<TextConverter title="Entersdkjsjhfj yor Text.." isDark={isDark} />}/>
 
-            <Route path="/" element={<TextConverter title="Enter yor Text.." isDark={isDark} showAlert={showAlert}/>}/>
+            <Route path="/" element={/>
             
-          </Routes>
+          </Routes> */}
+        <TextConverter title="Enter yor Text.." isDark={isDark} showAlert={showAlert}/>
 
       <Footer title="TextAnalyzer" isDark={isDark} />
-      </Router>
+      {/* </Router> */}
     </>
   );
 }
