@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import logo from '../logo.svg';
 
 export const Navbar = (props) => {
   

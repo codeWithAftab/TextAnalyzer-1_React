@@ -43,7 +43,7 @@ export default function TextConverter(props) {
         let ntext = text.toLowerCase().split(".");
         ntext.forEach(element => {
             let word;
-            if (element.charAt(0) == "\n") {
+            if (element.charAt(0) === "\n") {
                 console.log("yes")
                 word = element.charAt(1).toUpperCase() + element.slice(2,element.length)
                 word = "\n"+word;
